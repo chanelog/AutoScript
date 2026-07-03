@@ -90,7 +90,7 @@ mkdir -p /usr/local/bin /var/log/ws-proxy /etc/ws-proxy
 # Download proxy.js
 # -------------------------------
 log "Step 4: Downloading proxy.js..."
-PROXY_JS_URL="https://raw.githubusercontent.com/givps/AutoScriptXray/master/ws/proxy.js"
+PROXY_JS_URL="https://raw.githubusercontent.com/chanelog/AutoScript/master/ws/proxy.js"
 
 if wget -q -O /usr/local/bin/proxy.js "$PROXY_JS_URL"; then
     log "proxy.js downloaded successfully"
@@ -117,7 +117,7 @@ fi
 # Download systemd service
 # -------------------------------
 log "Step 6: Setting up ws-proxy systemd service..."
-SERVICE_URL="https://raw.githubusercontent.com/givps/AutoScriptXray/master/ws/ws-proxy.service"
+SERVICE_URL="https://raw.githubusercontent.com/chanelog/AutoScript/master/ws/ws-proxy.service"
 
 if wget -q -O /etc/systemd/system/ws-proxy.service "$SERVICE_URL"; then
     log "Systemd service file downloaded successfully"
